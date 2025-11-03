@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://c8ilqv1i8nqli"]
+
+[ext_resource type="Texture2D" uid="uid://cy4xfx762bxgb" path="res://assets/sprites/BG.png" id="1_5tue2"]
+[ext_resource type="Script" uid="uid://dsr0xp5aq38rx" path="res://scenes/arena/arena.gd" id="1_asdgj"]
+[ext_resource type="Texture2D" uid="uid://ov4fmsbglo55" path="res://assets/sprites/Map.png" id="2_aj7ud"]
+[ext_resource type="PackedScene" uid="uid://k22lgew0injk" path="res://scenes/players/player_well_rounded.tscn" id="3_asdgj"]
+[ext_resource type="Script" uid="uid://snantla8sjxc" path="res://scenes/arena/camera_2d.gd" id="4_aj7ud"]
+[ext_resource type="PackedScene" uid="uid://c7ysnj4moa0qn" path="res://scenes/enemy/enemy_chaser_slow.tscn" id="6_jx0ua"]
+
+[node name="Arena" type="Node2D" node_paths=PackedStringArray("player")]
+script = ExtResource("1_asdgj")
+player = NodePath("PlayerWellRounded")
+normal_color = Color(1, 1, 1, 1)
+block_color = Color(0.99607843, 0.78039217, 0.38039216, 1)
+critical_color = Color(0.85882354, 0.078431375, 0.23921569, 1)
+hp_color = Color(0, 0.627451, 0.48235294, 1)
+
+[node name="BlackBG" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_5tue2")
+
+[node name="GrassBG" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_aj7ud")
+
+[node name="PlayerWellRounded" parent="." instance=ExtResource("3_asdgj")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("4_aj7ud")
+
+[node name="EnemyChaserSlow" parent="." instance=ExtResource("6_jx0ua")]
+position = Vector2(-776, 0)
+
+[node name="EnemyChaserSlow2" parent="." instance=ExtResource("6_jx0ua")]
+position = Vector2(-780, 174)
+
+[node name="EnemyChaserSlow3" parent="." instance=ExtResource("6_jx0ua")]
+position = Vector2(-776, -340)

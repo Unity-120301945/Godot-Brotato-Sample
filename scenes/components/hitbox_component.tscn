@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyxeqhn3tilqx"]
+
+[ext_resource type="Script" uid="uid://on0u320h5jga" path="res://scenes/components/hitbox_component.gd" id="1_okvui"]
+
+[node name="HitboxComponent" type="Area2D"]
+script = ExtResource("1_okvui")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
