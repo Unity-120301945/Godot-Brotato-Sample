@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://bi87qr2x5vodh"]
+
+[ext_resource type="PackedScene" uid="uid://duu60ibvfjyb" path="res://scenes/weapons/melee/weapon_punch.tscn" id="1_jrl4k"]
+[ext_resource type="Texture2D" uid="uid://bbw1axlomamnl" path="res://assets/sprites/Weapons/Melee/Weapon_axe.png" id="2_xq71v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t2mr8"]
+size = Vector2(130, 48)
+
+[node name="WeaponAxe" instance=ExtResource("1_jrl4k")]
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(28, 4)
+texture = ExtResource("2_xq71v")
+
+[node name="CollisionShape2D" parent="Sprite2D/HitboxComponent2" index="1"]
+position = Vector2(0, -6)
+shape = SubResource("RectangleShape2D_t2mr8")

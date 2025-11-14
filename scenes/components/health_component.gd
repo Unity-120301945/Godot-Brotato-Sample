@@ -26,7 +26,7 @@ func take_damage(value: float) -> void:
 	on_unit_hit.emit()
 	#发送生命变化信号
 	on_health_changed.emit(current_health,max_health)
-	print("名称 -> %s , 当前生命值 -> %s , 最大生命值 -> %s" % [owner.name,current_health,max_health])
+	#print("名称 -> %s , 当前生命值 -> %s , 最大生命值 -> %s" % [owner.name,current_health,max_health])
 	check_died()
 
 #检查死亡状态

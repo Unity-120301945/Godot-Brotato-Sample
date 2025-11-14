@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="WeaponStats" load_steps=2 format=3 uid="uid://dbrpg4e3b3ya5"]
+
+[ext_resource type="Script" uid="uid://dq0t55y7qy8ka" path="res://resources/items/weapons/weapon_stats.gd" id="1_v6lug"]
+
+[resource]
+script = ExtResource("1_v6lug")
+damage = 20.0
+accuracy = 1.0
+cooldown = 0.9
+crit_chance = 0.2
+max_range = 220.0
+knockback = 1.0
+metadata/_custom_type_script = "uid://dq0t55y7qy8ka"

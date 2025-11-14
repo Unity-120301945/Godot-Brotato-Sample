@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="WeaponStats" load_steps=2 format=3 uid="uid://r2uchh8isf8g"]
+
+[ext_resource type="Script" uid="uid://dq0t55y7qy8ka" path="res://resources/items/weapons/weapon_stats.gd" id="1_e380n"]
+
+[resource]
+script = ExtResource("1_e380n")
+damage = 45.0
+accuracy = 0.65
+cooldown = 2.5
+crit_chance = 0.25
+crit_damage = 3.0
+max_range = 130.0
+knockback = 2.0
+recoil = 35.0
+recoil_duration = 0.2
+attack_duration = 0.5
+back_duration = 0.25
+metadata/_custom_type_script = "uid://dq0t55y7qy8ka"

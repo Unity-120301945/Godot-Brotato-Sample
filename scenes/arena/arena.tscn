@@ -23,8 +23,6 @@ texture = ExtResource("1_5tue2")
 scale = Vector2(2, 2)
 texture = ExtResource("2_aj7ud")
 
-[node name="PlayerWellRounded" parent="." instance=ExtResource("3_asdgj")]
-
 [node name="Camera2D" type="Camera2D" parent="."]
 script = ExtResource("4_aj7ud")
 
@@ -32,7 +30,21 @@ script = ExtResource("4_aj7ud")
 position = Vector2(-776, 0)
 
 [node name="EnemyChaserSlow2" parent="." instance=ExtResource("6_jx0ua")]
-position = Vector2(-780, 174)
+position = Vector2(-831, -271)
 
 [node name="EnemyChaserSlow3" parent="." instance=ExtResource("6_jx0ua")]
-position = Vector2(-776, -340)
+position = Vector2(-876, 273)
+
+[node name="EnemyChaserSlow4" parent="." instance=ExtResource("6_jx0ua")]
+position = Vector2(-672, 406)
+
+[node name="EnemyChaserSlow5" parent="." instance=ExtResource("6_jx0ua")]
+position = Vector2(-576, -314)
+
+[node name="EnemyChaserSlow6" parent="." instance=ExtResource("6_jx0ua")]
+position = Vector2(-634, 168)
+
+[node name="EnemyChaserSlow7" parent="." instance=ExtResource("6_jx0ua")]
+position = Vector2(-538, -104)
+
+[node name="PlayerWellRounded" parent="." instance=ExtResource("3_asdgj")]

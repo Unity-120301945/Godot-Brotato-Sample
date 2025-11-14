@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="WeaponStats" load_steps=2 format=3 uid="uid://pv1q80j7y2fc"]
+
+[ext_resource type="Script" uid="uid://dq0t55y7qy8ka" path="res://resources/items/weapons/weapon_stats.gd" id="1_6dgg1"]
+
+[resource]
+script = ExtResource("1_6dgg1")
+damage = 9.0
+accuracy = 0.6
+cooldown = 2.0
+crit_chance = 0.15
+crit_damage = 2.0
+max_range = 180.0
+lift_steal = 0.1
+recoil = 30.0
+recoil_duration = 0.30000000000000004
+attack_duration = 0.30000000000000004
+back_duration = 0.30000000000000004
+metadata/_custom_type_script = "uid://dq0t55y7qy8ka"

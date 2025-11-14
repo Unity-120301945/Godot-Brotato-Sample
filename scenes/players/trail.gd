@@ -12,6 +12,9 @@ class_name Trail
 var points_array: Array[Vector2] = [] #存储玩家位置的数组
 var is_active := false #是否存在
 	
+func _ready() -> void:
+	trail_timer.wait_time = trail_duration
+	
 func _process(_delta: float) -> void:
 	if not is_active:
 		return
@@ -27,7 +30,7 @@ func start_trail() -> void:
 	is_active = true
 	clear_points() #清除保存的所有标记点
 	points_array.clear() 
-	trail_timer.start(trail_duration)
+	trail_timer.start()
 
 func _on_trail_timer_timeout() -> void:
 	is_active = false

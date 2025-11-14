@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://iedgofu0oavf"]
+
+[ext_resource type="Script" uid="uid://dip8gfog0ojiw" path="res://scenes/players/dash_ghost.gd" id="1_pv111"]
+
+[node name="DashGhost" type="Node2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_pv111")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

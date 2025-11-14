@@ -13,6 +13,7 @@ func _ready() -> void:
 	#为什么对敌人或者玩家攻击的效果会放在竞技场里面，因为可以根据不同的竞技场配置不同的样式
 	Globat.on_create_block_text.connect(_on_create_block_text)
 	Globat.on_create_damage_text.connect(_on_create_damage_text)
+	Globat.on_create_not_accuracy_text.connect(on_create_not_accuracy_text)
 
 #创建一个悬浮文本节点用来显示被攻击的效果
 #unit表示显示的节点附近，比如敌人或者玩家附近
@@ -35,3 +36,8 @@ func _on_create_block_text(node: Node2D) -> void:
 func _on_create_damage_text(node: Node2D, hitbox: HitboxComponent) -> void:
 	var float_text := create_floating_text(node)
 	float_text.setup(str(hitbox.damage), normal_color if not hitbox.critical else critical_color, hitbox.critical)
+
+func on_create_not_accuracy_text(node: Node2D) -> void:
+	print("未命中!")
+	var float_text := create_floating_text(node)
+	float_text.setup("未命中!", block_color)

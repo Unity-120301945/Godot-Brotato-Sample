@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemWeapon" load_steps=6 format=3 uid="uid://jvuakmsn3fmx"]
+
+[ext_resource type="Texture2D" uid="uid://bnb452021oi28" path="res://assets/sprites/Weapons/Icons/weapon_sword_icon.png" id="1_61nvw"]
+[ext_resource type="PackedScene" uid="uid://csbe2sjtin7w5" path="res://scenes/weapons/melee/weapon_sword.tscn" id="2_webju"]
+[ext_resource type="Script" uid="uid://mc87t8kxd8v" path="res://resources/items/weapons/item_weapon.gd" id="3_pi8r6"]
+[ext_resource type="Resource" uid="uid://cxrdvl3sm4j7v" path="res://resources/items/weapons/melee/sword/stats_sword_3.tres" id="4_0vwln"]
+[ext_resource type="Resource" uid="uid://cg2t2gnixep4k" path="res://resources/items/weapons/melee/sword/item_sword_4.tres" id="5_blpcg"]
+
+[resource]
+script = ExtResource("3_pi8r6")
+scene = ExtResource("2_webju")
+stats = ExtResource("4_0vwln")
+upgrade_to = ExtResource("5_blpcg")
+item_name = "Sword III"
+item_icon = ExtResource("1_61nvw")
+item_tier = 2
+item_cost = 125
+metadata/_custom_type_script = "uid://mc87t8kxd8v"
